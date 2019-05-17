@@ -1,0 +1,57 @@
+---
+title: 'EKN-812: Practice Final'
+author:
+date: 
+output: pdf_document
+bibliography: ../../../../../library.bib
+biblio-style: authordate1
+geometry: margin=1in
+---
+
+_There are 55 points available on this problems set. It will be graded out of 40 i.e. there are 15 bonus points available._
+
+**You have three hours to complete this exam. You may refer to any written materials you find useful, but no electronic devices are permitted.**
+
+1. (a) Suppose there are only two sectors in the economy: manufacturing and services. If productivity grows at constant but different rates in each sector (e.g. productivity grows faster in manufacturing than in services), what will happen to the relative price of manufactured goods relative to services over time?
+
+(b) What will happen to the sectoral composition of the economy over time? Will the share of GDP produced by the service sector grow or shrink? You can ignore international trade (i.e. think of a closed economy). 
+
+**Hint:** In a closed economy, domestic production = consumption. Now, think of some extreme cases on the demand side.
+
+\hfill [$2 \times 5 = 10$ points]
+
+2. Decide whether the following statements are true, false, or uncertain. Explain your reasoning.
+
+(a) As worker productivity increases over time, we should expect both wages and average hours of work to increase.
+
+(b) Improvements in transportation infrastructure should increase land prices in centrally located neighborhoods relative to more remote ones.
+
+(c) During the recent water restrictions in Cape Town, residents had to queue to collect water in person. The social loss due to this form of rationing is larger than if the government had allocated vouchers (say one voucher entitles the holder to 5 liters of water) equally to all residents.
+
+\hfill [$3 \times 5 = 15$ points]
+
+3. Consider a parent who is altruistic towards her child, but also cares about her own consumption. The parent's utility over her own consumption and that of her child is 
+
+$$
+u_P = \log(c_0) + a\log(c_1)
+$$
+
+where $c_1$ is the child's consumption, and $a > 0$ is the degree of parental altruism. 
+
+Suppose that the parent can invest in the child's human capital by spending money ($e$) on her education; education generates human capital $h = f(e)$ and human capital is paid at rate $w$. The parent has a total income of $y$.
+
+Alternatively, she can also leave the child a bequest $b$, which would earn a gross return of $R > 1$. This rate of return is determined by the investment decisions of firms and other investors in other sectors in the economy, so the parent takes it as given.
+
+(a) Write down an expression for the child's future consumption in terms of the parent's choices of $e$ and $b$.
+
+(b) Now write down the Lagrangian for the parent's decision problem.
+
+(c) If $f(e) = e^\alpha$ for some given $\alpha \in (0,1)$, write down the first-order conditions for the parent's problem.
+
+(d) Solve for the parent's optimal choices $e^*$, $b^*$, and $c^*_0$.
+
+(e) Are this parent's human capital investment decisions socially efficient? How can you tell?
+
+(f) If it were illegal to leave debt to your children, how would this problem change? (i.e. how would you represent that constraint?) Would human capital investments be efficient then? If not, which families would "underinvest" and which would "overinvest"?
+
+\hfill [$6 \times 5 = 30$ points]
