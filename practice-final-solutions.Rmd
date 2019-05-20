@@ -1,0 +1,145 @@
+---
+title: 'EKN-812 Practice Final: Suggested Solutions'
+author:
+date: 
+output: pdf_document
+bibliography: ../../../../../library.bib
+biblio-style: authordate1
+geometry: margin=1in
+---
+
+_There are 55 points available on this problems set. It will be graded out of 40 i.e. there are 15 bonus points available._
+
+**You have three hours to complete this exam. You may refer to any written materials you find useful, but no electronic devices are permitted.**
+
+1. (a) Suppose there are only two sectors in the economy: manufacturing and services. If productivity grows at constant but different rates in each sector (e.g. productivity grows faster in manufacturing than in services), what will happen to the relative price of manufactured goods relative to services over time?
+
+**Answer:** Under competition, price = marginal cost. So the price of manufactured goods relative to services will fall over time.
+
+(b) What will happen to the sectoral composition of the economy over time? Will the share of GDP produced by the service sector grow or shrink? You can ignore international trade (i.e. think of a closed economy). 
+
+**Hint:** In a closed economy, domestic production = consumption. Now, think of some extreme cases on the demand side.
+
+**Answer:** It depends on the demand side. As an extreme case, suppose consumers have identical Leontief preferences (an elasticity of substitution of zero). Then there will be no change in the sectoral compostition of the economy. On the other hand, if the aggregate elasticity of substitution between the two goods is high enough (larger than one, in particular) then we will have the manufacturing share of consumption (and thus of GDP) growing over time.
+
+\hfill [$2 \times 5 = 10$ points]
+
+2. Decide whether the following statements are true, false, or uncertain. Explain your reasoning.
+
+(a) As worker productivity increases over time, we should expect both wages and average hours of work to increase.
+
+**Answer:** Uncertain - it depends on the relative strength of income and substitution effects in labor supply. With substitution effects dominant, the statement is true, but not otherwise.
+
+(b) Improvements in transportation infrastructure should increase land prices in centrally located neighborhoods relative to more remote ones.
+
+**Answer:** False or uncertain - in the simple monocentric city model we studied, the statement is exactly backwards: improvements in transportation efficiency will flatten the rent gradient, i.e. lowering the price of expensive areas relative to cheap ones. Of course there will be more to consider in any real case, e.g. if the improvements in infrastructure are concentrated in centrally located neighborhoods, and people value those improvements, this will tend to make expensive areas even more expensive.
+
+(c) During the recent water restrictions in Cape Town, residents had to queue to collect water in person. The social loss due to this form of rationing is larger than if the government had allocated vouchers (say one voucher entitles the holder to 5 liters of water) equally to all residents.
+
+**Answer:** True - for simplicity, assume everyone will consume the same amount of water. Then the social loss arises from the fact that we have to use up valuable time to allocate the water to each person (imagine you have to show your ID at the collection points). With vouchers, people with higher values of time would be willing to hire others to collect their allocated water and deliver it to them; and, people with lower values of time would be willing to accept that deal (at some price that clears the market for deliveries). The fact that these deals cannot happen means that the queuing equilibrium is less efficient to the voucher one.
+
+\hfill [$3 \times 5 = 15$ points]
+
+3. Consider a parent who is altruistic towards her child, but also cares about her own consumption. The parent's utility over her own consumption and that of her child is 
+
+$$
+u_P = \log(c_0) + a\log(c_1)
+$$
+
+where $c_1$ is the child's consumption, and $a > 0$ is the degree of parental altruism. 
+
+Suppose that the parent can invest in the child's human capital by spending money ($e$) on her education; education generates human capital $h = f(e)$ and human capital is paid at rate $w$. The parent has a total income of $y$.
+
+Alternatively, she can also leave the child a bequest $b$, which would earn a gross return of $R > 1$. This rate of return is determined by the investment decisions of firms and other investors in other sectors in the economy, so the parent takes it as given.
+
+(a) Write down an expression for the child's future consumption in terms of the parent's choices of $e$ and $b$.
+
+**Answer:** $c_1 = wf(e) + Rb$.
+
+(b) Now write down the Lagrangian for the parent's decision problem.
+
+**Answer:** The parent's problem is 
+$$
+\max_{c_0, c_1, e, b} \log(c_0) + a\log(c_1)
+$$
+
+subject to
+
+\begin{eqnarray}
+c_1 & \leq & wf(e) + Rb \\
+y & \geq & c_0 + e + b
+\end{eqnarray}
+
+So, the Lagrangian is (letting $\mu$ and $\lambda$ be the multipliers on the above constraints):
+
+$$
+\mathcal{L} = \log(c_0) + a\log(c_1) + \lambda[y - e - b - c_0] + \mu[wf(e) + Rb - c_1].
+$$
+
+(c) If $f(e) = e^\alpha$ for some given $\alpha \in (0,1)$, write down the first-order conditions for the parent's problem.
+
+**Answer:** These are
+
+\begin{eqnarray}
+& [c_0] & u'(c_0)  = \lambda \\
+& [c_1] & au'(c_1) = \mu \\
+& [e] & -\lambda + \mu wf'(e) \leq 0 \text{ with equality if $e^* > 0$} \\
+& [b] & -\lambda + R\mu \leq 0 \text{ with equality if $b^* > 0$}.
+\end{eqnarray}
+
+With the given functional forms - $u(c) = \log(c)$ and $f(e) = e^\alpha$ - we have
+
+$$
+w\alpha e^{\alpha - 1} \leq \lambda/\mu
+$$
+
+and the "intergenerational Euler equation" is
+
+$$
+a\left(\frac{c_0}{c_1}\right)  = \mu/\lambda.
+$$
+
+(d) Solve for the parent's optimal choices $e^*$, $b^*$, and $c^*_0$.
+
+**Answer:** At an interior solution (where both $e^*$ and $b^*$ are strictly positive) we have 
+
+$$
+e^* = \left(\frac{w\alpha}{R}\right)^{1/(1-\alpha)}
+$$
+
+while the fact that $\lambda^*/\mu^* = R$ means that 
+
+$$
+aRc^*_0 = c^*_1 = wf(e^*) + Rb^*.
+$$
+
+Notice how we can solve for the choice of $e$ without using the parent's budget constraint (which you can also see from the fact that $y$ does not appear in the expression for $e^*$). This is a consequence of the fact that in this model, human capital investments are efficient (so parental wealth doesn't matter for $e^*$). Then, using the expression for $c_1$ and the parent's budget constraint, we get
+
+$$
+y - e^* = \left[\frac{wf(e^*) + Rb^*}{aR}\right] + b^*
+$$
+
+which (after some algebra) yields the messy expression
+
+$$
+b^* = \frac{a}{1+a}\left[y - \left(\frac{w\alpha}{R}\right)^{1/(1-\alpha)}\right] - \frac{1}{1+a}\frac{w}{R}\left(\frac{w\alpha}{R}\right)^{\alpha/(1-\alpha)}
+$$
+
+and
+
+$$
+c^*_0 = (aR)^{-1}[w\left(e^*\right)^{\alpha} + Rb^*].
+$$
+
+This might seem like cheating, since we haven't given an expression for $c^*_0$ in terms of the primitives of the problem, but it is not. We already solved for $e^*$ and indeed for $b^*$, so we can treat them as if they are "known" now (we are just skipping the step of substituting those expressions in).
+
+(e) Are this parent's human capital investment decisions socially efficient? How can you tell?
+
+**Answer:** Yes, they are. The way to tell this is that the marginal return to investing in human capital, $wf'(e)$, is equal to the marginal return to investing in physical capital ($R$).
+
+(f) If it were illegal to leave debt to your children, how would this problem change? (i.e. how would you represent that constraint?) Would human capital investments be efficient then? If not, which families would "underinvest" and which would "overinvest"?
+
+**Answer:** Leaving debt to your children means choosing $b < 0$. If we wanted to rule this out we could impose the constraint $b \geq 0$, and for some families this would bind. Which ones would they be? An informal argument is as follows: if $b \geq 0$ binds at the solution, then we have $R\mu < \lambda$. Since $\lambda$ is the marginal utility of parental consumption $u'(c_0)$, it's those families with low consumption who would like to leave debt to their kids (but can't). We can guess that those with high $\lambda$ are those with low values of $y$, i.e. those with sufficiently low parental wealth $y$.
+
+
+\hfill [$6 \times 5 = 30$ points]
